@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор индекса массы тела</title>
+    <link rel="shortcut icon" href="img/калькул.jpg" type="img/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#08457e">
+    <link rel="icon" href="images/icons/icon-128x128.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#08457e">
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/калькул.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Калькулятор ИМТ
+          </a>
+        </div>
+      </nav>
+    <div class="container" style="max-width: 500px">
+       
+              <legend>Введите данные</legend>
+              <div class="mb-3">
+                <label for="weight_input" class="form-label">Рост в сантиметрах</label>
+                <input type="text" id="height_input" class="form-control" placeholder="120">
+              </div>
+              <div class="mb-3">
+                <label for="weight_input" class="form-label">Вес в килограммах</label>
+                <input type="text" id="weight_input" class="form-control" placeholder="55">
+              </div>
+              <div id="label_result" class="form-label">ИМТ =  </div>
+              <br/>
+              <button type="submit" class="btn btn-primary mb" id="btn">Считаем</button>
+         
+    </div>
+    <scripts src="js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
