@@ -8,7 +8,7 @@ const staticAssets=[
     'js/bootstrap.bundle.min.js',
     'app.js'
 ]
-const staticCashName = 'site-static-v2'
+const staticCashName = 'site-static-v3'
 
 // INSTALL
 self.addEventListener('install', async evt => {
