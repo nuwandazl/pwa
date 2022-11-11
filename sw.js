@@ -8,13 +8,13 @@ const staticAssets=[
     'js/bootstrap.bundle.min.js',
     'app.js'
 ]
-const staticCashName = 'site-static-v1'
+const staticCashName = 'site-static-v2'
 
 // INSTALL
 self.addEventListener('install', async evt => {
     self.addEventListener('install',evt =>{
         evt.waitUntil(
-            caches.open(staticCacheName).then((cache) => {
+            caches.open(staticCashName).then((cache) => {
                 console.log('Кэширование ресурсов')
                 cache.addAll(assets)
             })
@@ -28,7 +28,7 @@ self.addEventListener('activate', evt => {
     evt.waitUntil(
         caches.keys().then(keys => {
             return Promise.all(keys
-                .filter(key => key !== staticCacheName))
+                .filter(key => key !== staticCashName))
                 .map(key => caches.delete(key))
         })
     )
